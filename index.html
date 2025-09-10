@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rabbit Mua - 簡約介紹</title>
+    <title>Rabbit Mua - Minimalist Introduction</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', 'Microsoft JhengHei', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         body {
@@ -29,14 +29,14 @@
             width: 100%;
         }
         
-        /* 頭部樣式 */
+        /* Header styles */
         header {
             padding: 40px 0;
             text-align: center;
             position: relative;
         }
         
-        /* 右上角语言切换器样式 */
+        /* Language switcher styles */
         .language-switcher {
             position: absolute;
             top: 20px;
@@ -101,7 +101,7 @@
             border-radius: 2px;
         }
         
-        /* 左上角LOGO样式 */
+        /* Top-left logo styles */
         .corner-logo {
             position: absolute;
             top: 20px;
@@ -150,7 +150,7 @@
             margin: 0 auto;
         }
         
-        /* 主要內容區域 */
+        /* Main content area */
         .main-content {
             flex: 1;
             display: flex;
@@ -191,7 +191,7 @@
             color: #ccccdd;
         }
         
-        /* 連結區域 */
+        /* Links section */
         .links-section {
             background: rgba(34, 34, 64, 0.6);
             border-radius: 15px;
@@ -267,7 +267,7 @@
             box-shadow: 0 5px 15px rgba(197, 61, 132, 0.4);
         }
         
-        /* 頁尾樣式 */
+        /* Footer styles */
         footer {
             text-align: center;
             padding: 30px 0;
@@ -302,7 +302,7 @@
             transform: translateY(-3px);
         }
         
-        /* 響應式設計 */
+        /* Responsive design */
         @media (max-width: 768px) {
             .logo {
                 font-size: 2.5rem;
@@ -330,7 +330,7 @@
             }
             
             .corner-logo span {
-                display: none; /* 在小屏幕上隐藏文字只显示LOGO */
+                display: none; /* Hide text on small screens, only show logo */
             }
             
             .language-switcher {
@@ -342,26 +342,26 @@
 </head>
 <body>
     <div class="container">
-        <!-- 左上角LOGO -->
+        <!-- Top-left logo -->
         <div class="corner-logo">
             <img src="https://i.postimg.cc/DZMfzgfc/RABBITMUA-Photoroom.png" alt="Rabbit Mua Logo">
             <span>Rabbit Mua</span>
         </div>
         
-        <!-- 右上角语言切换器 -->
+        <!-- Top-right language switcher -->
         <div class="language-switcher">
             <button class="language-btn">
-                <i class="fas fa-globe"></i> <span id="current-language">中文</span>
+                <i class="fas fa-globe"></i> <span id="current-language">English</span>
                 <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i>
             </button>
             <div class="language-options">
-                <div class="language-option" data-lang="zh">
-                    <img src="https://flagcdn.com/w40/cn.png" class="flag-icon" alt="中文">
-                    <span>中文</span>
-                </div>
                 <div class="language-option" data-lang="en">
                     <img src="https://flagcdn.com/w40/gb.png" class="flag-icon" alt="English">
                     <span>English</span>
+                </div>
+                <div class="language-option" data-lang="zh">
+                    <img src="https://flagcdn.com/w40/cn.png" class="flag-icon" alt="中文">
+                    <span>中文</span>
                 </div>
                 <div class="language-option" data-lang="de">
                     <img src="https://flagcdn.com/w40/de.png" class="flag-icon" alt="Deutsch">
@@ -370,51 +370,54 @@
             </div>
         </div>
         
-        <!-- 頭部 -->
+        <!-- Header -->
         <header>
             <div class="logo">Rabbit <span>Mua</span></div>
-            <p class="tagline">簡約而不簡單 - 專業品質，卓越體驗</p>
+            <p class="tagline" data-i18n="tagline">Simple yet sophisticated - Professional quality, exceptional experience</p>
         </header>
         
-        <!-- 主要內容 -->
+        <!-- Main content -->
         <main class="main-content">
-            <!-- 品牌介紹 -->
+            <!-- Brand introduction -->
             <section class="brand-intro">
-                <h2 data-i18n="about_us">關於我們</h2>
-                <p data-i18n="about_desc1">Rabbit Mua 是一個專注於創意與幻想的品牌，我們致力於為獨處的靈魂提供一個可以自由表達的天地。</p>
-                <p data-i18n="about_desc2">無論您是一個人靜靜思考，還是喜歡沉浸在幻想世界中，這裡都有屬於您的故事和空間。</p>
-                <p data-i18n="about_desc3">我們相信，每個人都有權利擁有自己的幻想世界，而我們的使命就是為您打造這個世界的入口。</p>
+                <h2 data-i18n="about_us">About Us</h2>
+                <p data-i18n="about_desc1">Rabbit Mua is a brand focused on creativity and fantasy, dedicated to providing solitary souls with a space for free expression.</p>
+                <p data-i18n="about_desc2">Whether you enjoy quiet contemplation or immersing yourself in a fantasy world, there is a story and space here for you.</p>
+                <p data-i18n="about_desc3">We believe everyone has the right to their own fantasy world, and our mission is to create the entrance to that world for you.</p>
             </section>
             
-                    
+            <!-- Links section -->
+            <section class="links-section">
+                <h3 data-i18n="explore_more">Explore More</h3>
+                <div class="links-grid">
                     <div class="link-card">
                         <div class="link-icon">
                             <i class="fas fa-book-open"></i>
                         </div>
-                        <h4 data-i18n="fantasy_stories">我的幻想故事</h4>
-                        <p data-i18n="stories_desc">如果你和我一樣一個人，喜歡幻想，不妨看看我的故事。</p>
-                        <a href="https://zhyyzy.cn/blogs/%E6%83%B3%E8%A6%81%E8%B7%9F%E4%BD%A0%E2%9D%A4%EF%B8%8F?preview=1&themeId=685a80011edcdc25dc61c7ef" class="link-button" target="_blank" data-i18n="read_stories">閱讀故事</a>
+                        <h4 data-i18n="fantasy_stories">My Fantasy Stories</h4>
+                        <p data-i18n="stories_desc">If you're like me, alone and fond of fantasy, why not take a look at my stories.</p>
+                        <a href="https://zhyyzy.cn/blogs/%E6%83%B3%E8%A6%81%E8%B7%9F%E4%BD%A0%E2%9D%A4%EF%B8%8F?preview=1&themeId=685a80011edcdc25dc61c7ef" class="link-button" target="_blank" data-i18n="read_stories">Read Stories</a>
                     </div>
                     
                     <div class="link-card">
                         <div class="link-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <h4 data-i18n="contact_us">聯繫我們</h4>
-                        <p data-i18n="contact_desc">有任何問題或想法？我隨時為您提供幫助和交流。</p>
-                        <a href="mailto:wongchihonpacowong@gmail.com" class="link-button" data-i18n="get_in_touch">取得聯繫</a>
+                        <h4 data-i18n="contact_us">Contact Us</h4>
+                        <p data-i18n="contact_desc">Have any questions or ideas? I'm always available to help and communicate with you.</p>
+                        <a href="mailto:wongchihonpacowong@gmail.com" class="link-button" data-i18n="get_in_touch">Get in Touch</a>
                     </div>
                 </div>
             </section>
         </main>
     </div>
     
-    <!-- 頁尾 -->
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p data-i18n="copyright">&copy; 2021 Rabbit Mua. 保留所有權利.</p>
+            <p data-i18n="copyright">&copy; 2021 Rabbit Mua. All rights reserved.</p>
             <div class="social-links">
-                <a href="https://your-wechat-link.com" target="_blank" title="微信">
+                <a href="https://your-wechat-link.com" target="_blank" title="WeChat">
                     <i class="fab fa-weixin"></i>
                 </a>
                 <a href="https://tiktok.com/@your-profile" target="_blank" title="TikTok">
@@ -425,35 +428,14 @@
     </footer>
 
     <script>
-        // 多语言支持
+        // Multilingual support
         const translations = {
-            'zh': {
-                'about_us': '關於我們',
-                'about_desc1': 'Rabbit Mua 是一個專注於創意與幻想的品牌，我們致力於為獨處的靈魂提供一個可以自由表達的天地。',
-                'about_desc2': '無論您是一個人靜靜思考，還是喜歡沉浸在幻想世界中，這裡都有屬於您的故事和空間。',
-                'about_desc3': '我們相信，每個人都有權利擁有自己的幻想世界，而我們的使命就是為您打造這個世界的入口。',
-                'explore_more': '探索更多',
-                'products_center': '產品中心',
-                'products_desc': '瀏覽我們精心設計的創意產品，找到觸動心靈的獨特物品。',
-                'view_products': '查看產品',
-                'fantasy_stories': '我的幻想故事',
-                'stories_desc': '如果你和我一樣一個人，喜歡幻想，不妨看看我的故事。',
-                'read_stories': '閱讀故事',
-                'contact_us': '聯繫我們',
-                'contact_desc': '有任何問題或想法？我隨時為您提供幫助和交流。',
-                'get_in_touch': '取得聯繫',
-                'copyright': '&copy; 2021 Rabbit Mua. 保留所有權利.',
-                'language': '语言'
-            },
             'en': {
                 'about_us': 'About Us',
-                'about_desc1': 'Rabbit Mua is a brand focused on creativity and fantasy, dedicated to providing a space for solitary souls to express themselves freely.',
+                'about_desc1': 'Rabbit Mua is a brand focused on creativity and fantasy, dedicated to providing solitary souls with a space for free expression.',
                 'about_desc2': 'Whether you enjoy quiet contemplation or immersing yourself in a fantasy world, there is a story and space here for you.',
                 'about_desc3': 'We believe everyone has the right to their own fantasy world, and our mission is to create the entrance to that world for you.',
                 'explore_more': 'Explore More',
-                'products_center': 'Products Center',
-                'products_desc': 'Browse our carefully designed creative products and find unique items that touch your soul.',
-                'view_products': 'View Products',
                 'fantasy_stories': 'My Fantasy Stories',
                 'stories_desc': 'If you\'re like me, alone and fond of fantasy, why not take a look at my stories.',
                 'read_stories': 'Read Stories',
@@ -461,7 +443,24 @@
                 'contact_desc': 'Have any questions or ideas? I\'m always available to help and communicate with you.',
                 'get_in_touch': 'Get in Touch',
                 'copyright': '&copy; 2021 Rabbit Mua. All rights reserved.',
+                'tagline': 'Simple yet sophisticated - Professional quality, exceptional experience',
                 'language': 'Language'
+            },
+            'zh': {
+                'about_us': '關於我們',
+                'about_desc1': 'Rabbit Mua 是一個專注於創意與幻想的品牌，我們致力於為獨處的靈魂提供一個可以自由表達的天地。',
+                'about_desc2': '無論您是一個人靜靜思考，還是喜歡沉浸在幻想世界中，這裡都有屬於您的故事和空間。',
+                'about_desc3': '我們相信，每個人都有權利擁有自己的幻想世界，而我們的使命就是為您打造這個世界的入口。',
+                'explore_more': '探索更多',
+                'fantasy_stories': '我的幻想故事',
+                'stories_desc': '如果你和我一樣一個人，喜歡幻想，不妨看看我的故事。',
+                'read_stories': '閱讀故事',
+                'contact_us': '聯繫我們',
+                'contact_desc': '有任何問題或想法？我隨時為您提供幫助和交流。',
+                'get_in_touch': '取得聯繫',
+                'copyright': '&copy; 2021 Rabbit Mua. 保留所有權利.',
+                'tagline': '簡約而不簡單 - 專業品質，卓越體驗',
+                'language': '语言'
             },
             'de': {
                 'about_us': 'Über uns',
@@ -469,9 +468,6 @@
                 'about_desc2': 'Egal, ob Sie allein in Stille nachdenken oder es vorziehen, in einer Fantasiewelt zu versinken, hier finden Sie Ihre Geschichte und Ihren Raum.',
                 'about_desc3': 'Wir glauben, dass jeder das Recht hat, seine eigene Fantasiewelt zu haben, und unsere Mission ist es, Ihnen den Zugang zu dieser Welt zu ermöglichen.',
                 'explore_more': 'Mehr entdecken',
-                'products_center': 'Produktzentrum',
-                'products_desc': 'Durchstöbern Sie unsere sorgfältig gestalteten kreativen Produkte und finden Sie einzigartige Artikel, die Ihre Seele berühren.',
-                'view_products': 'Produkte ansehen',
                 'fantasy_stories': 'Meine Fantasiegeschichten',
                 'stories_desc': 'Wenn Sie wie ich allein sind und Fantasie mögen, warum werfen Sie nicht einen Blick auf meine Geschichten?',
                 'read_stories': 'Geschichten lesen',
@@ -479,14 +475,15 @@
                 'contact_desc': 'Haben Sie Fragen oder Ideen? Ich stehe Ihnen jederzeit zur Verfügung, um zu helfen und mit Ihnen zu kommunizieren.',
                 'get_in_touch': 'Kontakt aufnehmen',
                 'copyright': '&copy; 2021 Rabbit Mua. Alle Rechte vorbehalten.',
+                'tagline': 'Einfach aber nicht gewöhnlich - Professionelle Qualität, außergewöhnliches Erlebnis',
                 'language': 'Sprache'
             }
         };
 
-        // 设置当前语言
-        let currentLang = localStorage.getItem('language') || 'zh';
+        // Set current language
+        let currentLang = localStorage.getItem('language') || 'en';
         
-        // 更新页面文本
+        // Update page text
         function updatePageText() {
             document.querySelectorAll('[data-i18n]').forEach(element => {
                 const key = element.getAttribute('data-i18n');
@@ -499,19 +496,22 @@
                 }
             });
             
-            // 更新当前语言显示
+            // Update current language display
             document.getElementById('current-language').textContent = 
-                currentLang === 'zh' ? '中文' : 
                 currentLang === 'en' ? 'English' : 
+                currentLang === 'zh' ? '中文' : 
                 'Deutsch';
+                
+            // Update HTML lang attribute
+            document.documentElement.lang = currentLang;
         }
         
-        // 簡單的頁面加載動畫
+        // Simple page load animation
         document.addEventListener('DOMContentLoaded', function() {
-            // 初始化语言
+            // Initialize language
             updatePageText();
             
-            // 语言切换器功能
+            // Language switcher functionality
             const languageBtn = document.querySelector('.language-btn');
             const languageOptions = document.querySelector('.language-options');
             
@@ -519,7 +519,7 @@
                 languageOptions.classList.toggle('show');
             });
             
-            // 点击语言选项
+            // Click language options
             document.querySelectorAll('.language-option').forEach(option => {
                 option.addEventListener('click', function() {
                     currentLang = this.getAttribute('data-lang');
@@ -529,14 +529,14 @@
                 });
             });
             
-            // 点击页面其他区域关闭语言选择器
+            // Click elsewhere to close language selector
             document.addEventListener('click', function(e) {
                 if (!languageBtn.contains(e.target) && !languageOptions.contains(e.target)) {
                     languageOptions.classList.remove('show');
                 }
             });
             
-            // 添加淡入效果
+            // Add fade-in effect
             const elements = document.querySelectorAll('header, .brand-intro, .links-section, footer');
             elements.forEach(el => {
                 el.style.opacity = 0;
@@ -551,14 +551,14 @@
                 });
             }, 100);
             
-            // 為所有連結添加確認提示
+            // Add confirmation prompt for all links
             const links = document.querySelectorAll('a');
             links.forEach(link => {
                 link.addEventListener('click', function(e) {
-                    // 如果是站外連結，提示用戶
+                    // If it's an external link, prompt the user
                     if (this.target === '_blank' || this.href.startsWith('mailto:') === false) {
-                        const message = currentLang === 'zh' ? '你準備好夜晚的浪漫了嗎？' : 
-                                       currentLang === 'en' ? 'Are you ready for a romantic night?' :
+                        const message = currentLang === 'en' ? 'Are you ready for a romantic night?' : 
+                                       currentLang === 'zh' ? '你準備好夜晚的浪漫了嗎？' :
                                        'Sind Sie bereit für eine romantische Nacht?';
                         
                         if (!confirm(message)) {
